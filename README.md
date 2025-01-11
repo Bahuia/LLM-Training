@@ -35,9 +35,19 @@
 
 ## 神经网络模型基础
 
+本节内容需要结合Pytorch教程学习
+
 ### 知识储备要求
 * 数学基础知识：线性代数，微积分，概率统计，离散数学
 * 机器学习基础：监督学习和无监督学习，过拟合和欠拟合，模型评估指标（如准确率、精确率、召回率、F1 分数），交叉验证
+
+### 传统神经网络
+
+#### CNN模型
+原理讲解：https://zhuanlan.zhihu.com/p/156926543
+
+#### RNN/LSTM/GRU模型
+原理讲解：https://zhuanlan.zhihu.com/p/123211148
 
 ### Transformer模型
 
@@ -45,9 +55,27 @@ Transformer是一种深度学习模型架构，最初由Google团队在2017年�
 
 * 原论文连接：https://arxiv.org/abs/1706.03762
 * 对Transformer的代码注解：https://nlp.seas.harvard.edu/2018/04/03/attention.html
-哈佛NLP组对transformer的基本功能的简单实现。入门的同学可以仔细阅读其代码，深入理解transformer中的attention机制与位置编码。
+哈佛NLP组对Transformer的基本功能的简单实现。阅读其代码与注解，可以深入理解transformer中的attention机制与位置编码的具体实现。
 
+### 预训练模型
 
+预训练模型（Pre-trained Models）是近年来人工智能领域，特别是自然语言处理（NLP）和计算机视觉（CV）领域的核心技术之一。它通过在大规模数据上进行预训练，学习通用的特征表示，然后可以通过微调（fine-tuning）或迁移学习（transfer learning）来适应具体任务。
+
+#### BERT
+BERT是由Google在2018年提出的一种基于Transformer架构的自然语言处理模型，旨在通过双向的上下文学习方法来理解语言的深层含义。
+* 原论文链接：https://arxiv.org/abs/1810.04805
+* 原理讲解：https://zhuanlan.zhihu.com/p/46652512
+
+#### GPT
+GPT是一种基于深度学习的自然语言处理模型，由 OpenAI 开发。它的核心技术是 Transformer 架构，这是一种在处理序列数据（如文本）方面非常高效的神经网络结构。也是目前ChatGPT系列的模型的原型。
+* 原论文链接：https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+* 原理讲解：https://zhuanlan.zhihu.com/p/636915538
+
+#### T5
+T5 是由谷歌在2019年提出的一种基于Transformer的自然语言处理预训练模型。T5的核心创新在于将几乎所有的自然语言处理任务统一为文本到文本的形式，即将输入和输出都看作字符串，从而简化了任务的定义和模型的设计。
+
+* 原论文链接：https://arxiv.org/abs/1910.10683
+* 原理讲解：https://zhuanlan.zhihu.com/p/88438851
 
 ## PyTorch教程
 
