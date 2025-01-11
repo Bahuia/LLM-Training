@@ -99,8 +99,21 @@ PyTorch是目前最广泛使用的深度学习框架之一。
 * 中文文档：https://pytorch123.com
 * Pytorch实用教程：https://tingsongyu.github.io/PyTorch-Tutorial-2nd/
 
+## HuggingFace
 
-## 大语言模型训练框架：
+HuggingFace包含了Transformers库，Dataset库和Model库。
+Transformers 是一个Python（主要基于Pytorch）库，用于自然语言处理。它包含了多种以transformer模型为基础架构的预训练模型相关代码，如BERT、GPT、RoBERTa、T5、llama家族等。这些模型可以很容易地用于自然语言理解和生成任务。
+Dataset库提供了快速、高效的方式来下载、预处理和加载NLP数据集。
+Model库运营着一个模型中心，这是一个共享和发现预训练模型的平台。用户可以上传自己训练的模型，或者下载别人分享的模型，应用于不同的机器学习任务。
+
+* 官方网址：https://huggingface.co
+
+很多经典的PLM（LLM），数据集，都会上传到该网站，开源供研究者下载。
+
+目前，可以从 https://huggingface.co/docs/transformers/index
+中查找到目前几乎所有的PLM的代码实现，学习相关模型的具体实现与API调用接口，方便后续对模型架构进行修改。
+
+## 大语言模型训练框架
 
 ### 先导知识：
 * 熟悉Python语言与Pytorch深度学习框架
