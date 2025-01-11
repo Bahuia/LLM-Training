@@ -27,11 +27,6 @@
 * 提示工程总结博客： https://www.promptingguide.ai
 可以快速了解提示工程的定义与各种类别以及对应论文。
 
-* Search-O1：https://mp.weixin.qq.com/s/gqnGyMM_KYYwDbHyWkIIuw
-自主知识检索新框架
-
-* Falcon：https://mp.weixin.qq.com/s/QfNiSWyGThJyw2IEY5Ltvg
-大模型推理加速范式
 
 ## 神经网络模型基础
 
@@ -131,7 +126,7 @@ Model库运营着一个模型中心，这是一个共享和发现预训练模型
 强烈推荐的一本关于LLM的学习资料，但需要配合前面的基础知识进行学习。
 此书与本教程的内容有较多重叠，可以对先前知识完成补全。
 可以重点学习第六、七、八、九章。
-* [清华LLM公开课](https://github.com/hiyouga/LLaMA-Factory) 
+* [清华LLM公开课](https://www.bilibili.com/video/BV1UG411p7zv?buvid=XU11F2D1F1B6721741676EA71D3F31356C54F&from_spmid=playlist.playlist-detail.0.0&is_story_h5=false&mid=w7mFjjzdrDXbKb0J8YwY7g%3D%3D&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=00d7fb01-933c-42b3-89c7-7db4d68bd324&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1725711243&unique_k=HMZ3qGQ&up_id=493282299&wxfid=o7omF0RtW5yr6BgHzKzhtWiTIqNQ&share_times=2&_unique_id_=8e3bd8bb-c73e-43b4-b8fa-a40e89a44691&code=081C9dll2fDEQe44dlnl2sFU4u1C9dlx&state=&spm_id_from=333.788.videopod.episodes)
 系统的了解大模型的历史、原理和前沿进展。
 * [GPT系列论文精读](https://www.bilibili.com/video/BV1AF411b7xQ)
 * [Llama3.1论文精读](https://www.bilibili.com/video/BV1WM4m1y7Uh/)
@@ -162,15 +157,42 @@ https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/README.md
 ### 预训练
 预训练通常非常吃资源，实验室通常难以完成，因此资料主要以了解为主。
 
-#### 资料汇总
 * [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
 * [LLM训练技术讲解](https://zhuanlan.zhihu.com/p/636270877)
 
 ### Prompt技术
 
-#### 资料汇总：
+* Prompt对LLM的影响：https://mp.weixin.qq.com/s/OFwqmnB8Qoq-am-OrRstIQ
 * COT：https://arxiv.org/abs/2201.11903
 * PromptWizard：https://mp.weixin.qq.com/s/_0gERIijVNOlQuhmGv5mOg
 * RePrompt：https://mp.weixin.qq.com/s/R6ZsMZwiHNGcfVowUwPvaQ
 * DSPy：https://mp.weixin.qq.com/s/oog-dCmWFqT6IAC06pIESA
 * Least-to-Most：https://mp.weixin.qq.com/s/HX0p0nTmtgOsgzNM8rT_SA
+* ICL：https://mp.weixin.qq.com/s/xkSVSD017xaohG3V-1oRow
+* 知识图谱prompt：https://mp.weixin.qq.com/s/Q9qAHmzMjiWvZg8reTw7dQ
+* 结构化语言prompt：https://mp.weixin.qq.com/s/wE60z0HtC2um7Wt5ScG-PQ
+
+### 检索生成增强
+
+* 一文读懂RAG：https://www.zhihu.com/tardis/zm/art/675509396?source_id=1003
+* 同济RAG综述：https://arxiv.org/abs/2312.10997
+* PDF解析RAG：https://mp.weixin.qq.com/s/OJgKzoLMw_SZ-9petsAyYA
+* 现有RAG框架总结：https://mp.weixin.qq.com/s/4AEC-JWccUgNLP1xp9RgVw
+* Search-O1：https://mp.weixin.qq.com/s/gqnGyMM_KYYwDbHyWkIIuw
+自主知识检索新框架
+* GraphRAG：https://github.com/microsoft/graphrag
+* LightRAG：https://github.com/HKUDS/LightRAG
+
+### LLM Agent
+* LLM Agent综述：https://arxiv.org/abs/2308.11432
+* LangChain：https://www.langchain.com
+* Language Agent：https://yusu.substack.com/p/language-agents
+
+### LLM推理加速
+* vLLM：https://qiankunli.github.io/2024/07/07/vllm.html
+最广泛使用的大模型推理加速范式
+* Falcon：https://mp.weixin.qq.com/s/QfNiSWyGThJyw2IEY5Ltvg
+* Retrival-Attention：https://mp.weixin.qq.com/s/AhYvVpCHCeJalaKkkFsWMQ
+
+### LLM可解释性
+* 程序性知识：https://mp.weixin.qq.com/s/udRoUMDzDpfApi5xymFk9w
