@@ -39,9 +39,11 @@
 ### 传统神经网络
 
 #### CNN模型
+CNN（卷积神经网络），全称是 Convolutional Neural Network，是一种专门用于处理具有网格模式数据（如图像）的一类深度学习模型。CNN 在计算机视觉、自然语言处理等领域得到了广泛应用，尤其在图像分类、目标检测、语义分割等视觉任务中表现非常出色。
 原理讲解：https://zhuanlan.zhihu.com/p/156926543
 
 #### RNN/LSTM/GRU模型
+RNN（Recurrent Neural Network，循环神经网络）是一种用于处理序列数据的神经网络，广泛应用于自然语言处理（NLP）、时间序列预测、语音识别等任务。与传统的前馈神经网络（如全连接网络或卷积神经网络）不同，RNN具有处理序列数据和捕捉时间依赖关系的能力。
 原理讲解：https://zhuanlan.zhihu.com/p/123211148
 
 ### Transformer模型
@@ -132,6 +134,8 @@ Model库运营着一个模型中心，这是一个共享和发现预训练模型
 * [Llama3.1论文精读](https://www.bilibili.com/video/BV1WM4m1y7Uh/)
 
 ### 主要论文
+这些论文涵盖了当前最基本的LLM模型和基本方法，必读。
+
 * GPT3：https://arxiv.org/abs/2005.14165
 * InstructGPT：https://arxiv.org/pdf/2203.02155
 * RLHF：https://www.cs.utexas.edu/~ai-lab/pubs/ICML_IL11-knox.pdf
@@ -162,6 +166,8 @@ https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/README.md
 
 ### Prompt技术
 
+Prompt技术是指围绕与大语言模型（如GPT-4）或其他人工智能模型的交互中，设计或优化输入提示（prompt）以引导模型生成更准确、有用或符合预期的输出的一系列方法和技巧。Prompt技术已经成为人工智能领域的重要研究方向，尤其是在自然语言处理和生成任务中。
+
 * Prompt对LLM的影响：https://mp.weixin.qq.com/s/OFwqmnB8Qoq-am-OrRstIQ
 * COT：https://arxiv.org/abs/2201.11903
 * PromptWizard：https://mp.weixin.qq.com/s/_0gERIijVNOlQuhmGv5mOg
@@ -173,6 +179,7 @@ https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/README.md
 * 结构化语言prompt：https://mp.weixin.qq.com/s/wE60z0HtC2um7Wt5ScG-PQ
 
 ### 检索生成增强
+检索生成增强（Retrieval-Augmented Generation，RAG） 是一种结合信息检索和生成式模型的技术，旨在通过引入外部知识库或文档来增强生成式语言模型的表现。它可以有效弥补生成式模型的知识盲点、提高生成内容的准确性，同时在动态和大规模知识更新场景中表现优异。
 
 * 一文读懂RAG：https://www.zhihu.com/tardis/zm/art/675509396?source_id=1003
 * 同济RAG综述：https://arxiv.org/abs/2312.10997
@@ -184,6 +191,8 @@ https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/README.md
 * LightRAG：https://github.com/HKUDS/LightRAG
 
 ### LLM Agent
+LLM Agent 是指一种基于大型语言模型（Large Language Model, LLM）的“智能代理（Agent）”，通过与外部工具、环境或数据交互来完成复杂任务。相比于普通的语言模型对话，LLM Agent 能够具备更高的任务完成能力，具有“感知-决策-执行”的特性，类似于一个多功能的智能助手。
+
 * LLM Agent综述：https://arxiv.org/abs/2308.11432
 * LangChain：https://www.langchain.com
 * Language Agent：https://yusu.substack.com/p/language-agents
