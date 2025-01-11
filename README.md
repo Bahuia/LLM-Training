@@ -5,7 +5,8 @@
 
 ### 提示工程（Prompt Engineering）
 
-先导知识：无
+#### 先导知识：
+无
 
 #### 可视化实验平台
 推荐使用Poe（https://poe.com）平台进行带有可视化界面的提示工程简单实验，便于零基础同学熟悉LLM使用方式。该平台需要注册，免费版可以使用国内外多种不同来源的LLM，包括Llama系列，Gemini系列，GPT系列，QWen系列等。
@@ -26,4 +27,28 @@
 * 提示工程总结博客： https://www.promptingguide.ai
 可以快速了解提示工程的定义与各种类别以及对应论文。
 
-* 
+* Search-O1：https://mp.weixin.qq.com/s/gqnGyMM_KYYwDbHyWkIIuw
+自主知识检索新框架
+
+* Falcon：https://mp.weixin.qq.com/s/QfNiSWyGThJyw2IEY5Ltvg
+大模型推理加速范式
+
+
+
+
+### 大语言模型训练框架：
+
+#### 先导知识：
+* 熟悉Python语言与Pytorch深度学习框架
+* 了解神经网络基础，
+
+LLaMA-Factory是一个github开源项目，集成了二十多个llama家族模型的相关代码。这些代码包含pre-training，supervised fine-tuning，Reward Modeling，DPO等LLM中的基本阶段。通过该框架，可以在不深入了解每个模型的底层实现的前提下，快速上手微调模型。使用时与huggingface提供的模型结合使用。具体操作请参考项目首页的README。
+
+https://github.com/hiyouga/LLaMA-Factory
+
+以下README中提供了当前版本的各种训练方式的指令，需要熟悉。
+https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/README.md
+
+
+
+
