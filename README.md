@@ -178,6 +178,15 @@ Prompt技术是指围绕与大语言模型（如GPT-4）或其他人工智能模
 * 知识图谱prompt：https://mp.weixin.qq.com/s/Q9qAHmzMjiWvZg8reTw7dQ
 * 结构化语言prompt：https://mp.weixin.qq.com/s/wE60z0HtC2um7Wt5ScG-PQ
 
+### 指令微调
+指令微调（Instruction Tuning）是一种神经网络模型训练技术，旨在通过引导模型更好地理解和执行人类的自然语言指令，从而提高模型在各种任务中的表现和对用户需求的响应能力。
+
+* Instruction-tuning简介：https://zhuanlan.zhihu.com/p/558286175
+* Instruction-tuning时代的LLM：https://blog.csdn.net/Kaiyuan_sjtu/article/details/130818363
+* instruction-tuning数据集汇总：https://github.com/zhilizju/Awesome-instruction-tuning
+* 中文Instruction-tuning数据集汇总：https://github.com/xv44586/Chinese-instruction-datasets
+* Lora微调详解：https://www.cnblogs.com/justLittleStar/p/18242820
+
 ### 检索生成增强
 检索生成增强（Retrieval-Augmented Generation，RAG） 是一种结合信息检索和生成式模型的技术，旨在通过引入外部知识库或文档来增强生成式语言模型的表现。它可以有效弥补生成式模型的知识盲点、提高生成内容的准确性，同时在动态和大规模知识更新场景中表现优异。
 
@@ -204,4 +213,6 @@ LLM Agent 是指一种基于大型语言模型（Large Language Model, LLM）的
 * Retrival-Attention：https://mp.weixin.qq.com/s/AhYvVpCHCeJalaKkkFsWMQ
 
 ### LLM可解释性
+* ICL的原理：https://www.techbeat.net/article-info?id=5473
+* Function Vector：https://arxiv.org/abs/2310.15213
 * 程序性知识：https://mp.weixin.qq.com/s/udRoUMDzDpfApi5xymFk9w
