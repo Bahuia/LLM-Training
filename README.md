@@ -1,7 +1,7 @@
 # COIN 新生大语言模型培训指南
 
 
-## 提示工程
+## 提示工程（大语言模型入门）
 
 ### 知识储备要求
 * 熟悉Python编程语言
@@ -57,7 +57,7 @@ Transformer是一种深度学习模型架构，最初由Google团队在2017年�
 * 对Transformer的代码注解：https://nlp.seas.harvard.edu/2018/04/03/attention.html
 哈佛NLP组对Transformer的基本功能的简单实现。阅读其代码与注解，可以深入理解transformer中的attention机制与位置编码的具体实现。
 
-### 预训练模型
+### 传统预训练模型
 
 预训练模型（Pre-trained Models）是近年来人工智能领域，特别是自然语言处理（NLP）和计算机视觉（CV）领域的核心技术之一。它通过在大规模数据上进行预训练，学习通用的特征表示，然后可以通过微调（fine-tuning）或迁移学习（transfer learning）来适应具体任务。
 
@@ -92,7 +92,7 @@ PyTorch是目前最广泛使用的深度学习框架之一。
 
 ### 知识储备要求
 * 熟悉Python编程语言
-* 熟悉深度学习算法，经典神经网络模型结构。
+* 熟悉深度学习算法，经典神经网络模型结构
 
 ### 资料汇总
 * 官方文档：https://pytorch.org/tutorials/
@@ -106,6 +106,11 @@ Transformers 是一个Python（主要基于Pytorch）库，用于自然语言处
 Dataset库提供了快速、高效的方式来下载、预处理和加载NLP数据集。
 Model库运营着一个模型中心，这是一个共享和发现预训练模型的平台。用户可以上传自己训练的模型，或者下载别人分享的模型，应用于不同的机器学习任务。
 
+### 知识储备要求
+* 熟悉Python编程语言，Pytorch框架
+* 熟悉各种神经网络模型结构以及预训练模型架构原理
+
+### 资料汇总
 * 官方网址：https://huggingface.co
 
 很多经典的PLM（LLM），数据集，都会上传到该网站，开源供研究者下载。
@@ -113,19 +118,59 @@ Model库运营着一个模型中心，这是一个共享和发现预训练模型
 目前，可以从 https://huggingface.co/docs/transformers/index
 中查找到目前几乎所有的PLM的代码实现，学习相关模型的具体实现与API调用接口，方便后续对模型架构进行修改。
 
-## 大语言模型训练框架
+## 大语言模型进阶学习
 
-### 先导知识：
-* 熟悉Python语言与Pytorch深度学习框架
-* 了解神经网络基础，
+### 知识储备要求：
+* 熟悉Python编程语言，Pytorch框架
+* 熟悉各种神经网络模型结构以及预训练模型架构原理
+* 熟悉HuggingFace的Transfromers代码实现，以及常用API接口
 
-LLaMA-Factory是一个github开源项目，集成了二十多个llama家族模型的相关代码。这些代码包含pre-training，supervised fine-tuning，Reward Modeling，DPO等LLM中的基本阶段。通过该框架，可以在不深入了解每个模型的底层实现的前提下，快速上手微调模型。使用时与huggingface提供的模型结合使用。具体操作请参考项目首页的README。
+### 主要学习资料
 
-https://github.com/hiyouga/LLaMA-Factory
+* [《大语言模型》](LLM.pdf)
+强烈推荐的一本关于LLM的学习资料，但需要配合前面的基础知识进行学习。
+此书与本教程的内容有较多重叠，可以对先前知识完成补全。
+可以重点学习第六、七、八、九章。
+* [清华LLM公开课](https://github.com/hiyouga/LLaMA-Factory) 
+系统的了解大模型的历史、原理和前沿进展。
+* [GPT系列论文精读](https://www.bilibili.com/video/BV1AF411b7xQ)
+* [Llama3.1论文精读](https://www.bilibili.com/video/BV1WM4m1y7Uh/)
 
-以下README中提供了当前版本的各种训练方式的指令，需要熟悉。
+### 主要论文
+* GPT3：https://arxiv.org/abs/2005.14165
+* InstructGPT：https://arxiv.org/pdf/2203.02155
+* RLHF：https://www.cs.utexas.edu/~ai-lab/pubs/ICML_IL11-knox.pdf
+* Llama：https://arxiv.org/abs/2302.13971
+* Llama2：https://arxiv.org/abs/2307.09288
+* GPT-4：https://arxiv.org/abs/2303.08774
+* O1：https://openai.com/index/learning-to-reason-with-llms/
+* Llama3：https://arxiv.org/abs/2407.21783
+* Prompt：https://dl.acm.org/doi/pdf/10.1145/3560815
+* LoRA：https://arxiv.org/abs/2106.09685
+* PPO：https://arxiv.org/pdf/1707.06347
+* DPO：https://arxiv.org/abs/2305.18290
+
+### LLM训练推理实验平台
+
+[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)是一个github开源项目，集成了二十多个llama家族模型的相关代码。这些代码包含pre-training，supervised fine-tuning，Reward Modeling，DPO等LLM中的基本阶段。通过该框架，可以在不深入了解每个模型的底层实现的前提下，快速上手微调模型。使用时与huggingface提供的模型结合使用。具体操作请参考项目首页的README。
+
+以下README提供了当前版本下，各种训练方式的指令，需要熟悉。
 https://github.com/hiyouga/LLaMA-Factory/blob/main/examples/README.md
 
+在科研中，如果不涉及更改LLM的结构，例如修改attention机制，增加MOE等，一般直接调用这些API指令即可完成对模型的各种训练需求，其中重点需要掌握Lora Supervised Fine-Tuning（应用最广泛）。
 
+### 预训练
+预训练通常非常吃资源，实验室通常难以完成，因此资料主要以了解为主。
 
+#### 资料汇总
+* [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+* [LLM训练技术讲解](https://zhuanlan.zhihu.com/p/636270877)
 
+### Prompt技术
+
+#### 资料汇总：
+* COT：https://arxiv.org/abs/2201.11903
+* PromptWizard：https://mp.weixin.qq.com/s/_0gERIijVNOlQuhmGv5mOg
+* RePrompt：https://mp.weixin.qq.com/s/R6ZsMZwiHNGcfVowUwPvaQ
+* DSPy：https://mp.weixin.qq.com/s/oog-dCmWFqT6IAC06pIESA
+* Least-to-Most：https://mp.weixin.qq.com/s/HX0p0nTmtgOsgzNM8rT_SA
