@@ -3,10 +3,12 @@
 
 ## 提示工程
 
-适合没有深度学习和LLM基础的同学，对LLM形成初步认识，并能够直接上手使用。
+### 知识储备要求
+* 熟悉Python编程语言
 
 ### 可视化实验平台
-推荐使用Poe（https://poe.com）平台进行带有可视化界面的提示工程简单实验，便于零基础同学熟悉LLM使用方式。该平台需要注册，免费版可以使用国内外多种不同来源的LLM，包括Llama系列，Gemini系列，GPT系列，QWen系列等。
+推荐使用Poe（https://poe.com）
+平台进行带有可视化界面的提示工程简单实验，便于零基础同学熟悉LLM使用方式。该平台需要注册，免费版可以使用国内外多种不同来源的LLM，包括Llama系列，Gemini系列，GPT系列，QWen系列等。
 
 1. 登录后，平台首页如下所示，选择红框中提供的官方LLM创建bot：
 ![](figure/poe1.png)
@@ -14,7 +16,8 @@
 ![](figure/poe2.png)
 
 ### 批量API访问实验平台
-推荐使用钱多多API平台（https://api2.aigcbest.top）进行可以批量访问的提示工程实验，用于帮助进阶的同学使用相应的LLM api处理大批量数据，便于在研究数据集上实验。注：该网站需要充值，按每次查询大模型的内容量计费，但是相比于大模型的官方API便宜，且不需要翻墙可以使用国外的多个LLM。
+推荐使用钱多多API平台（https://api2.aigcbest.top）
+进行可以批量访问的提示工程实验，用于帮助进阶的同学使用相应的LLM api处理大批量数据，便于在研究数据集上实验。注：该网站需要充值，按每次查询大模型的内容量计费，但是相比于大模型的官方API便宜，且不需要翻墙可以使用国外的多个LLM。
 
 各个模型的价目表：https://api2.aigcbest.top/pricing 
 如果使用常用的gpt-3.5-turbo模型，一共生成1M token（一百万个单词或汉字）的回复，仅需1.5美元。
@@ -30,7 +33,23 @@
 * Falcon：https://mp.weixin.qq.com/s/QfNiSWyGThJyw2IEY5Ltvg
 大模型推理加速范式
 
-## PyTorch教程：
+## 神经网络模型基础
+
+### 知识储备要求
+* 数学基础知识：线性代数，微积分，概率统计，离散数学
+* 机器学习基础：监督学习和无监督学习，过拟合和欠拟合，模型评估指标（如准确率、精确率、召回率、F1 分数），交叉验证
+
+### Transformer模型
+
+Transformer是一种深度学习模型架构，最初由Google团队在2017年提出。它专为处理序列数据（如自然语言）而设计，并在自然语言处理任务中表现出色，后来也广泛应用于计算机视觉、语音处理等领域。目前，几乎所有熟知的LLM都基于这一架构。
+
+* 原论文连接：https://arxiv.org/abs/1706.03762
+* 对Transformer的代码注解：https://nlp.seas.harvard.edu/2018/04/03/attention.html
+哈佛NLP组对transformer的基本功能的简单实现。入门的同学可以仔细阅读其代码，深入理解transformer中的attention机制与位置编码。
+
+
+
+## PyTorch教程
 
 PyTorch 是一个开源的深度学习框架，由 Meta（原 Facebook）开发并维护。它以动态计算图和灵活易用为特点，广泛应用于学术研究和工业实践。
 
@@ -42,6 +61,10 @@ PyTorch 提供了一整套工具，用于构建和训练神经网络，包括：
 - **丰富的生态系统**：包括高层封装库（如 TorchVision、TorchText、TorchAudio 等）和工具（如 Lightning、HuggingFace 等）。
 
 PyTorch是目前最广泛使用的深度学习框架之一。
+
+### 知识储备要求
+* 熟悉Python编程语言
+* 熟悉深度学习算法，经典神经网络模型结构。
 
 ### 资料汇总
 * 官方文档：https://pytorch.org/tutorials/
