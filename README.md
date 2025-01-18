@@ -64,6 +64,21 @@ CUDA_VISIBLE_DEVICES=0 python generate_response.py \
 * [MOPO：实现多领域情感文本生成的提示优化](https://mp.weixin.qq.com/s/rYJcReVngtDS-eNvuc0upA)
 
 
+## 进阶学习资料
+
+* [Transformer原论文](https://arxiv.org/abs/1706.03762)
+* [对Transformer的代码注解](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
+* [《大语言模型》](LLM.pdf) 学习第五章，第七章与第十一章
+* [清华LLM公开课](https://www.bilibili.com/video/BV1UG411p7zv?buvid=XU11F2D1F1B6721741676EA71D3F31356C54F&from_spmid=playlist.playlist-detail.0.0&is_story_h5=false&mid=w7mFjjzdrDXbKb0J8YwY7g%3D%3D&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=00d7fb01-933c-42b3-89c7-7db4d68bd324&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1725711243&unique_k=HMZ3qGQ&up_id=493282299&wxfid=o7omF0RtW5yr6BgHzKzhtWiTIqNQ&share_times=2&_unique_id_=8e3bd8bb-c73e-43b4-b8fa-a40e89a44691&code=081C9dll2fDEQe44dlnl2sFU4u1C9dlx&state=&spm_id_from=333.788.videopod.episodes) 主要学习4-1到4-10以及4-16内容。
+* [Prompt模版对LLM的影响](https://mp.weixin.qq.com/s/OFwqmnB8Qoq-am-OrRstIQ) 
+* [微软开源PromptWizard：自动prompt工具](https://mp.weixin.qq.com/s/_0gERIijVNOlQuhmGv5mOg)
+* [RePrompt：提示词自动化优化策略](https://mp.weixin.qq.com/s/R6ZsMZwiHNGcfVowUwPvaQ)
+* [自动优化LLM流水线](https://mp.weixin.qq.com/s/oog-dCmWFqT6IAC06pIESA)
+* [把ICL和IWL双重学习同时写进提示词](https://mp.weixin.qq.com/s/xkSVSD017xaohG3V-1oRow)
+* [知识图谱提示激发大型语言模型中的思维图](https://mp.weixin.qq.com/s/Q9qAHmzMjiWvZg8reTw7dQ)
+* [通过结构化数据提升大型语言模型推理能力](https://mp.weixin.qq.com/s/wE60z0HtC2um7Wt5ScG-PQ)
+
+
 ## 一些学习工作中的prompt技巧
 当前时代，LLM工具的作用非常强大，使用得当可以显著提升学习工作效率
 ### 代码编写
@@ -84,17 +99,3 @@ LLM，如GPT-3.5-turbo，GPT-4o，可以很轻易地直接给出可以运行的�
 
 ### 文献阅读
 阅读文献，尤其是英文文献，可以使用[豆包app](https://www.doubao.com/chat/?channel=google_sem&source=dbweb_google_sem_pp_hx_pc_01&keywordid=172509644083&gad_source=1&gbraid=0AAAAA-pec8OEqhfApoaJ6AQX3vNtqNfRT&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK96CkiBXONBpQLO-_3_4uwv_1SJrGqZ1o8MFOIeGlEOb50Iwq4eNsAaAkoVEALw_wcB)中的AI阅读功能 或者 [notebooklm](https://notebooklm.google)（需要设置美国节点的VPN），这些工具可以解析PDF文档（论文）进行全文理解。如果文献中有不懂的地方，可以直接提问，让其用中文进行解释。
-
-## 进阶学习资料
-
-* [Transformer原论文](https://arxiv.org/abs/1706.03762)
-* [对Transformer的代码注解](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
-* [《大语言模型》](LLM.pdf) 学习第五章，第七章与第十一章
-* [清华LLM公开课](https://www.bilibili.com/video/BV1UG411p7zv?buvid=XU11F2D1F1B6721741676EA71D3F31356C54F&from_spmid=playlist.playlist-detail.0.0&is_story_h5=false&mid=w7mFjjzdrDXbKb0J8YwY7g%3D%3D&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=00d7fb01-933c-42b3-89c7-7db4d68bd324&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1725711243&unique_k=HMZ3qGQ&up_id=493282299&wxfid=o7omF0RtW5yr6BgHzKzhtWiTIqNQ&share_times=2&_unique_id_=8e3bd8bb-c73e-43b4-b8fa-a40e89a44691&code=081C9dll2fDEQe44dlnl2sFU4u1C9dlx&state=&spm_id_from=333.788.videopod.episodes) 主要学习4-1到4-10以及4-16内容。
-* [Prompt模版对LLM的影响](https://mp.weixin.qq.com/s/OFwqmnB8Qoq-am-OrRstIQ) 
-* [微软开源PromptWizard：自动prompt工具](https://mp.weixin.qq.com/s/_0gERIijVNOlQuhmGv5mOg)
-* [RePrompt：提示词自动化优化策略](https://mp.weixin.qq.com/s/R6ZsMZwiHNGcfVowUwPvaQ)
-* [自动优化LLM流水线](https://mp.weixin.qq.com/s/oog-dCmWFqT6IAC06pIESA)
-* [把ICL和IWL双重学习同时写进提示词](https://mp.weixin.qq.com/s/xkSVSD017xaohG3V-1oRow)
-* [知识图谱提示激发大型语言模型中的思维图](https://mp.weixin.qq.com/s/Q9qAHmzMjiWvZg8reTw7dQ)
-* [通过结构化数据提升大型语言模型推理能力](https://mp.weixin.qq.com/s/wE60z0HtC2um7Wt5ScG-PQ)
