@@ -57,10 +57,33 @@ CUDA_VISIBLE_DEVICES=0 python generate_response.py \
 目前，实验室服务器上已经保存了多个常用的LLM检查点，路径为`/datanfs2/chenyongrui/huggingface/`，可供直接使用。
 
 
-## 基础学习资料
+## 其他基础学习资料
 
+* [提示工程学习笔记](https://www.aneasystone.com/archives/2024/01/prompt-engineering-notes.html) 学习到思维树之前
 * [Least-to-Most提示可在大型语言模型中实现复杂的推理](https://mp.weixin.qq.com/s/HX0p0nTmtgOsgzNM8rT_SA)
 * [MOPO：实现多领域情感文本生成的提示优化](https://mp.weixin.qq.com/s/rYJcReVngtDS-eNvuc0upA)
+
+
+## 一些学习工作中的prompt技巧
+当前时代，LLM工具的作用非常强大，使用得当可以显著提升学习工作效率
+### 代码编写
+进行实验时，对于一些模块化的函数，可以直接使用prompt询问LLM，让其直接为你生成相应的代码。例如：
+```text
+我需要一个python程序，可以从输入文本中找出所有日期。
+```
+LLM，如GPT-3.5-turbo，GPT-4o，可以很轻易地直接给出可以运行的正确程序。
+
+### 代码调试
+在运行代码时会遭遇各种各样的报错信息，或者环境不完整，此时第一件要做的事，就是可以将报错信息直接输入给LLM，询问他可能的解决办法，例如：
+```text
+<bug_message>
+运行代码时报了这种错误，应该怎么处理？
+```
+这里`<bug_message>`是复制粘贴来的报错信息。LLM会给你解决方案。如果方案不成功，就把新的错误粘贴上，继续提问。
+如果实在解决不了，此时再可以再利用google等搜索引擎进行错误查询。
+
+### 文献阅读
+阅读文献，尤其是英文文献，可以使用[豆包app](https://www.doubao.com/chat/?channel=google_sem&source=dbweb_google_sem_pp_hx_pc_01&keywordid=172509644083&gad_source=1&gbraid=0AAAAA-pec8OEqhfApoaJ6AQX3vNtqNfRT&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK96CkiBXONBpQLO-_3_4uwv_1SJrGqZ1o8MFOIeGlEOb50Iwq4eNsAaAkoVEALw_wcB)中的AI阅读功能 或者 [notebooklm](https://notebooklm.google)（需要设置美国节点的VPN），这些工具可以解析PDF文档（论文）进行全文理解。如果文献中有不懂的地方，可以直接提问，让其用中文进行解释。
 
 ## 进阶学习资料
 
