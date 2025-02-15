@@ -74,6 +74,15 @@ CUDA_VISIBLE_DEVICES=0 python generate_response.py \
 * [把ICL和IWL双重学习同时写进提示词](https://mp.weixin.qq.com/s/xkSVSD017xaohG3V-1oRow)
 * [知识图谱提示激发大型语言模型中的思维图](https://mp.weixin.qq.com/s/Q9qAHmzMjiWvZg8reTw7dQ)
 * [通过结构化数据提升大型语言模型推理能力](https://mp.weixin.qq.com/s/wE60z0HtC2um7Wt5ScG-PQ)
+* [大模型基础（浙大）](LLM_basis.pdf)
+* [清华DeepSeek介绍](deepseek_slides.pdf)
+* [DeepSeek-R1：真正的推理源自强化学习与Chain-of-Thought，而非MoE](https://mp.weixin.qq.com/s/FtZSWMzwj-R52X_CtIvM-A)
+* [以DeepSeek为例，聊聊大模型轻量化趋势](https://mp.weixin.qq.com/s/NjyGQVVdxGCOQ3t0Wa43wQ)
+* [【手撕GRPO】你只管给Reward, 剩下的交给RL(附代码)](https://mp.weixin.qq.com/s/v4OSW1pi6BqRH6p3R9cQzw)
+* [《大语言模型》读书笔记](https://zhuanlan.zhihu.com/p/20901438363)
+* [ChatGPT技术路线](ChatGPT.pdf![img.png](img.png))
+* [COT技术讲解](cot.pdf)
+* [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
 
 
 ## 一些学习工作中的prompt技巧
